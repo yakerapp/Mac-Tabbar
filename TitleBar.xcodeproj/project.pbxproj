@@ -27,6 +27,9 @@
 		23278DFC1F468C7C008B50E0 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 23278DEF1F468C7C008B50E0 /* View+MASAdditions.m */; };
 		23278DFD1F468C7C008B50E0 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 23278DF21F468C7C008B50E0 /* ViewController+MASAdditions.m */; };
 		23278E001F468CD1008B50E0 /* CustomWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23278DFF1F468CD1008B50E0 /* CustomWindowController.m */; };
+		23590A891F4AEBC3000E100B /* TabbarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 23590A881F4AEBC3000E100B /* TabbarView.m */; };
+		23590A8B1F4AEBDF000E100B /* TabbarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23590A8A1F4AEBDF000E100B /* TabbarView.xib */; };
+		23C696461F4BCA8E00D2BFF4 /* TabbarBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 23C696451F4BCA8E00D2BFF4 /* TabbarBtn.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,6 +95,11 @@
 		23278DF21F468C7C008B50E0 /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+MASAdditions.m"; sourceTree = "<group>"; };
 		23278DFE1F468CD1008B50E0 /* CustomWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomWindowController.h; sourceTree = "<group>"; };
 		23278DFF1F468CD1008B50E0 /* CustomWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomWindowController.m; sourceTree = "<group>"; };
+		23590A871F4AEBC3000E100B /* TabbarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabbarView.h; sourceTree = "<group>"; };
+		23590A881F4AEBC3000E100B /* TabbarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabbarView.m; sourceTree = "<group>"; };
+		23590A8A1F4AEBDF000E100B /* TabbarView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TabbarView.xib; sourceTree = "<group>"; };
+		23C696441F4BCA8E00D2BFF4 /* TabbarBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabbarBtn.h; sourceTree = "<group>"; };
+		23C696451F4BCA8E00D2BFF4 /* TabbarBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabbarBtn.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +154,11 @@
 				23278DA61F46861A008B50E0 /* AppDelegate.m */,
 				23278DAB1F46861A008B50E0 /* ViewController.h */,
 				23278DAC1F46861A008B50E0 /* ViewController.m */,
+				23C696441F4BCA8E00D2BFF4 /* TabbarBtn.h */,
+				23C696451F4BCA8E00D2BFF4 /* TabbarBtn.m */,
+				23590A871F4AEBC3000E100B /* TabbarView.h */,
+				23590A881F4AEBC3000E100B /* TabbarView.m */,
+				23590A8A1F4AEBDF000E100B /* TabbarView.xib */,
 				23278DD51F4686FE008B50E0 /* CustomWindow.h */,
 				23278DD61F4686FE008B50E0 /* CustomWindow.m */,
 				23278DFE1F468CD1008B50E0 /* CustomWindowController.h */,
@@ -326,6 +339,7 @@
 			files = (
 				23278DAF1F46861A008B50E0 /* Assets.xcassets in Resources */,
 				23278DB21F46861A008B50E0 /* Main.storyboard in Resources */,
+				23590A8B1F4AEBDF000E100B /* TabbarView.xib in Resources */,
 				23278DF31F468C7C008B50E0 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -364,7 +378,9 @@
 				23278DFC1F468C7C008B50E0 /* View+MASAdditions.m in Sources */,
 				23278DAA1F46861A008B50E0 /* main.m in Sources */,
 				23278DA71F46861A008B50E0 /* AppDelegate.m in Sources */,
+				23C696461F4BCA8E00D2BFF4 /* TabbarBtn.m in Sources */,
 				23278DF41F468C7C008B50E0 /* MASCompositeConstraint.m in Sources */,
+				23590A891F4AEBC3000E100B /* TabbarView.m in Sources */,
 				23278DFB1F468C7C008B50E0 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -592,6 +608,7 @@
 				23278DCE1F46861A008B50E0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		23278DCF1F46861A008B50E0 /* Build configuration list for PBXNativeTarget "TitleBarTests" */ = {
 			isa = XCConfigurationList;
@@ -600,6 +617,7 @@
 				23278DD11F46861A008B50E0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		23278DD21F46861A008B50E0 /* Build configuration list for PBXNativeTarget "TitleBarUITests" */ = {
 			isa = XCConfigurationList;
@@ -608,6 +626,7 @@
 				23278DD41F46861A008B50E0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

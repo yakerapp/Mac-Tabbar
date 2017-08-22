@@ -7,10 +7,13 @@
 //
 
 #import "ViewController.h"
+#import "TabbarView.h"
 
 @interface ViewController ()
 
-@property (weak) IBOutlet NSView *toolView;
+@property (weak) IBOutlet NSVisualEffectView *effectView;
+
+@property (weak) IBOutlet TabbarView *tabbarView;
 
 @end
 
@@ -18,14 +21,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
 }
 - (void)viewDidAppear{
     //操作layer属性必须加，否则无效
-    _toolView.wantsLayer = YES;
-    _toolView.layer.backgroundColor = [NSColor windowBackgroundColor].CGColor;
-    
     self.view.wantsLayer = YES;
     self.view.layer.backgroundColor = [NSColor whiteColor].CGColor;
+    
+    //修改毛玻璃的风格
+    self.effectView.material = NSVisualEffectMaterialLight;
 }
 
 

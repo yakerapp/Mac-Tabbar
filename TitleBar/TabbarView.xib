@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11542" systemVersion="16F73" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11542"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="TabbarView">
+            <connections>
+                <outlet property="contactBtn" destination="XQe-iE-dn2" id="QQL-0s-sq4"/>
+                <outlet property="messageBtn" destination="Q87-3f-rq4" id="r2i-fU-Hvi"/>
+                <outlet property="moreBtn" destination="cFF-li-tSr" id="NCD-bA-ZNV"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="c22-O7-iKe">
+            <rect key="frame" x="0.0" y="0.0" width="202" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Q87-3f-rq4" customClass="TabbarBtn">
+                    <rect key="frame" x="10" y="8" width="44" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="LeH-SY-jXI"/>
+                        <constraint firstAttribute="width" constant="44" id="PmV-bS-a4z"/>
+                    </constraints>
+                    <buttonCell key="cell" type="smallSquare" bezelStyle="smallSquare" image="menu-message-normal" imagePosition="overlaps" alignment="center" lineBreakMode="truncatingTail" state="on" imageScaling="proportionallyDown" inset="2" id="gKi-pE-QaE">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="itemButtonClicked:" target="-2" id="BHr-ue-tTt"/>
+                    </connections>
+                </button>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="XQe-iE-dn2" customClass="TabbarBtn">
+                    <rect key="frame" x="74" y="8" width="44" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="Jp6-CQ-bqj"/>
+                        <constraint firstAttribute="width" constant="44" id="vnR-fe-AVn"/>
+                    </constraints>
+                    <buttonCell key="cell" type="smallSquare" bezelStyle="smallSquare" image="menu-contact-normal" imagePosition="overlaps" alignment="center" lineBreakMode="truncatingTail" state="on" imageScaling="proportionallyDown" inset="2" id="mT4-wj-x9o">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="itemButtonClicked:" target="-2" id="Afr-D0-FaK"/>
+                    </connections>
+                </button>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="cFF-li-tSr" customClass="TabbarBtn">
+                    <rect key="frame" x="138" y="8" width="44" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="GJl-Jf-X3Z"/>
+                        <constraint firstAttribute="width" constant="44" id="KAJ-Mt-IYJ"/>
+                    </constraints>
+                    <buttonCell key="cell" type="smallSquare" bezelStyle="smallSquare" image="menu-more-normal" imagePosition="overlaps" alignment="center" lineBreakMode="truncatingTail" state="on" imageScaling="proportionallyDown" inset="2" id="7Wh-uN-U36">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="itemButtonClicked:" target="-2" id="JJz-ll-Gi1"/>
+                    </connections>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstItem="XQe-iE-dn2" firstAttribute="leading" secondItem="Q87-3f-rq4" secondAttribute="trailing" constant="20" id="FBk-YI-dnE"/>
+                <constraint firstItem="XQe-iE-dn2" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" constant="8" id="KoN-Dl-dP4"/>
+                <constraint firstItem="cFF-li-tSr" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" constant="8" id="NN0-NA-Ef8"/>
+                <constraint firstItem="Q87-3f-rq4" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" constant="10" id="dLp-Xu-25A"/>
+                <constraint firstItem="Q87-3f-rq4" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" constant="8" id="km2-Ga-Vl4"/>
+                <constraint firstItem="cFF-li-tSr" firstAttribute="leading" secondItem="XQe-iE-dn2" secondAttribute="trailing" constant="20" id="zwI-b5-QX2"/>
+            </constraints>
+            <point key="canvasLocation" x="-96" y="77"/>
+        </customView>
+    </objects>
+    <resources>
+        <image name="menu-contact-normal" width="24" height="26"/>
+        <image name="menu-message-normal" width="24" height="24"/>
+        <image name="menu-more-normal" width="24" height="24"/>
+    </resources>
+</document>

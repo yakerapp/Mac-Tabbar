@@ -684,29 +684,39 @@
             <objects>
                 <viewController id="XfG-lQ-9wD" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" wantsLayer="YES" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="421"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="j48-1j-dIk">
-                                <rect key="frame" x="0.0" y="210" width="480" height="60"/>
+                            <visualEffectView appearanceType="vibrantDark" blendingMode="behindWindow" material="light" state="followsWindowActiveState" translatesAutoresizingMaskIntoConstraints="NO" id="Bdo-g1-PrT">
+                                <rect key="frame" x="0.0" y="361" width="480" height="60"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="lsM-RR-yDn"/>
+                                    <constraint firstAttribute="height" constant="60" id="Sma-Ne-8y1"/>
+                                </constraints>
+                            </visualEffectView>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="8u2-BS-IGW" customClass="TabbarView">
+                                <rect key="frame" x="144" y="361" width="192" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="46O-zw-ftG"/>
+                                    <constraint firstAttribute="width" constant="192" id="orD-Yg-Bor"/>
                                 </constraints>
                             </customView>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="j48-1j-dIk" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" id="QZA-MY-bX1"/>
-                            <constraint firstAttribute="trailing" secondItem="j48-1j-dIk" secondAttribute="trailing" id="bin-54-hmo"/>
-                            <constraint firstItem="j48-1j-dIk" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" id="yLZ-ed-qoB"/>
+                            <constraint firstItem="8u2-BS-IGW" firstAttribute="centerX" secondItem="m2S-Jp-Qdl" secondAttribute="centerX" id="09g-ZE-9Fa"/>
+                            <constraint firstItem="8u2-BS-IGW" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" id="7Wd-2K-AaV"/>
+                            <constraint firstItem="Bdo-g1-PrT" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" id="9If-HR-I3B"/>
+                            <constraint firstItem="Bdo-g1-PrT" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" id="PYa-0j-KZe"/>
+                            <constraint firstAttribute="trailing" secondItem="Bdo-g1-PrT" secondAttribute="trailing" id="dKT-Vp-4ch"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="toolView" destination="j48-1j-dIk" id="UNx-Lb-y0Y"/>
+                        <outlet property="effectView" destination="Bdo-g1-PrT" id="ebX-3m-k44"/>
+                        <outlet property="tabbarView" destination="8u2-BS-IGW" id="s6r-ez-Jfz"/>
                     </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="655"/>
+            <point key="canvasLocation" x="15" y="784"/>
         </scene>
     </scenes>
 </document>
